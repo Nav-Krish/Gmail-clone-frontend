@@ -1,10 +1,10 @@
-import { Photo, StarOutline,SendOutlined,InsertDriveFileOutlined,DeleteOutlined, MailOutlined } from "@mui/icons-material"
+import { StarOutline,SendOutlined,InsertDriveFileOutlined,DeleteOutlined, MailOutlined } from "@mui/icons-material"
 
 export const SIDEBAR_DATA = [
   {
     name: "inbox",
     title: "Inbox",
-    icon: Photo,
+    icon: MailOutlined,
   },
   {
     name: "starred",
@@ -25,10 +25,5 @@ export const SIDEBAR_DATA = [
     name: "bin",
     title: "Bin",
     icon: DeleteOutlined,
-  },
-  {
-    name: "all",
-    title: "All Mail",
-    icon: MailOutlined,
   },
 ]

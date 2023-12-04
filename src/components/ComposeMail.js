@@ -75,7 +75,6 @@ const ComposeMail = ({ openDialog, setOpenDialog }) => {
         },
       })
       .then((response) => {
-        console.log(response.data)
         setOpenDialog(false)
         setData({})
       })
@@ -93,7 +92,6 @@ const ComposeMail = ({ openDialog, setOpenDialog }) => {
         },
       })
       .then((response) => {
-        console.log(response.data)
         setOpenDialog(false)
         setData({})
       })
@@ -109,7 +107,7 @@ const ComposeMail = ({ openDialog, setOpenDialog }) => {
   return (
     <Dialog open={openDialog} PaperProps={{ sx: dialogStyle }}>
       <Header>
-        <Typography>New Message</Typography>
+        <Typography className="my-auto">New Message</Typography>
         <Close fontSize="large" onClick={(e) => closeComposeMail(e)} />
       </Header>
       <RecipientsWrapper>

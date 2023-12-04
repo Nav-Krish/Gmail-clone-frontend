@@ -4,7 +4,6 @@ import axios from "axios"
 const ForgotPassword = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(e.target.email.value)
 
     axios
       .post(`https://gmail-clone-backend-agbj.onrender.com/user/forgot_password`, {
@@ -88,7 +87,7 @@ const ForgotPassword = () => {
                 </div>
                 <div className="text-center">
                   <button className="btn btn-primary my-3" type="submit">
-                    Next
+                    Submit
                   </button>
                 </div>
               </form>

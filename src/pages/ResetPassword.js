@@ -9,7 +9,6 @@ const ResetPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(e.target.password.value)
 
     axios
       .post(

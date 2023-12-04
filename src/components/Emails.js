@@ -25,24 +25,20 @@ const Emails = ({ openDrawer }) => {
         setData(data)
       })
       .catch((error) => console.log(error))
-      console.log('hi');
   }, [type, refreshScreen])
 
   const selectAllEmails = (e) => {
     if (e.target.checked) {
       const emails = data.map((email) => email._id)
-      console.log(emails);
       setSelectedEmails(emails)
       
     } else {
       setSelectedEmails([])
     }
   }
-  console.log(selectedEmails)
 
   const deleteSelectedEmails =async (e) => {
     if (type === "bin") {
-      console.log("entered")
       await axios({
         method: "DELETE",
         url: `https://gmail-clone-backend-agbj.onrender.com/mail/bin`,

@@ -6,7 +6,7 @@ const Register = () => {
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
   const [password, setPassword] = useState("")
-  const refresh = useNavigate()
+  const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -26,13 +26,12 @@ const Register = () => {
     )
 
     const data = await response.json()
-    console.log(data.token)
     localStorage.setItem("token", data.token)
     if (data.user) {
-      alert("Register successful")
-      refresh("/login")
+      alert("Registered successfully")
+      navigate('/login')
     } else {
-      alert("Register failed")
+      alert("Registration failed")
     }
   }
 
