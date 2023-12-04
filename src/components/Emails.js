@@ -45,7 +45,7 @@ const Emails = ({ openDrawer }) => {
       console.log("entered")
       await axios({
         method: "DELETE",
-        url: `${process.env.REACT_APP_SERVER_INDEX_URL}/mail/bin`,
+        url: `https://gmail-clone-backend-agbj.onrender.com/mail/bin`,
         data: selectedEmails,
 
         headers: {
@@ -55,7 +55,7 @@ const Emails = ({ openDrawer }) => {
       
     } else {
       await axios.post(
-        `${process.env.REACT_APP_SERVER_INDEX_URL}/mail/bin`,
+        `https://gmail-clone-backend-agbj.onrender.com/mail/bin`,
         selectedEmails,
         {
           headers: {
