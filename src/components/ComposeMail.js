@@ -69,7 +69,7 @@ const ComposeMail = ({ openDialog, setOpenDialog }) => {
     }else{
 
     axios
-      .post(`https://gmail-clone-t23y.onrender.com/mail/drafts`, data, {
+      .post(`https://gmail-clone-backend-agbj.onrender.com/mail/drafts`, data, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -110,7 +110,7 @@ const ComposeMail = ({ openDialog, setOpenDialog }) => {
     <Dialog open={openDialog} PaperProps={{ sx: dialogStyle }}>
       <Header>
         <Typography>New Message</Typography>
-        <Close fontSize="small" onClick={(e) => closeComposeMail(e)} />
+        <Close fontSize="large" onClick={(e) => closeComposeMail(e)} />
       </Header>
       <RecipientsWrapper>
         <InputBase
