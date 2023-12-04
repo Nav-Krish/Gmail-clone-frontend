@@ -1,5 +1,5 @@
-Default credentials:
+Default credentials:<br>
 
-Name: admin,
-Email: admin@gmail.com,
+Name: admin, <br>
+Email: admin@gmail.com, <br>
 Password: 123456
