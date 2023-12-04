@@ -43,7 +43,7 @@ const SideBarContent = () => {
   return (
     <Container>
       <ComposeButton onClick={() => onComposeClick()}>
-        <CreateOutlined />
+        <CreateOutlined className="me-1" />
         Compose
       </ComposeButton>
       <List>
