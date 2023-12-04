@@ -35,7 +35,7 @@ const Date = styled(Typography)({
   color: "#5f6368",
 })
 
-const Email = ({ email, selectedEmails, setRefreshScreen,setSelectedEmails,openDrawer }) => {
+const Email = ({ email, selectedEmails, setRefreshScreen,setSelectedEmails,openDrawer,type }) => {
   const navigate = useNavigate()
   
   const toggleStarredMails = () => {
@@ -84,7 +84,7 @@ const Email = ({ email, selectedEmails, setRefreshScreen,setSelectedEmails,openD
         <Typography style={{ width: 200, overflow: "hidden" }}>
           {email.name}
         </Typography>
-        <Indicator>Inbox</Indicator>
+        <Indicator>{type}</Indicator>
         <Typography>
           {email.subject} {email.body && "-"} {email.body}{" "}
         </Typography>

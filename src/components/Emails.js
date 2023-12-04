@@ -93,6 +93,7 @@ const Emails = ({ openDrawer }) => {
             setRefreshScreen={setRefreshScreen}
             setSelectedEmails={setSelectedEmails}
             openDrawer={openDrawer}
+            type = {type}
           />
         ))}
       </List>
