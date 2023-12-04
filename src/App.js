@@ -17,7 +17,7 @@ function App() {
       <Route path="/" Component={Register} />
       <Route path="/login" Component={Login} />
       <Route path="/forgot-password" Component={ForgotPassword} />
-      <Route path="/api/v1/reset_password/:id/:token" Component={ResetPassword} />
+      <Route path="/user/reset-password/:id/:token" Component={ResetPassword} />
       <Route path="/mail/:type" Component={MainPage} />
       <Route path='mail/view/:id' Component={ViewMail} />
     </Routes>
